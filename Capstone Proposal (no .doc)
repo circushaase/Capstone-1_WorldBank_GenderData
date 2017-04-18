@@ -1,0 +1,26 @@
+Capstone Proposal: World Bank Gender Statistics
+
+Apologies for the lack of formatting, but I wanted the proposal to also be available to anyone who didn't want to download the .doc version.
+
+      1. What is the problem you want to solve?:
+Assess whether women are equal with men on various measurements of well being/success, determined by region. Analyze which factors have the strongest correlations and make recommendation for changes that will have the greatest outcome for women (as well as men/children)
+
+      2. Who is your client and why do they care about this problem? What will your client DO or DECIDE based on your analysis that they wouldn’t have otherwise?:
+Any multitude of Human Rights or women’s rights organizations might benefit from this data analysis. It will help pinpoint problem areas throughout the world as well as determine which factors are most influential and need the most attention. This will allow organizations to focus their efforts and minimize waste or counter-productive actions. 
+
+Potential Clients:
+The World Bank can use this analysis to ensure its investments are done with conscious concern for human rights. Decisions will be made about where to make investments and with which organizations. Helpful article: https://www.hrw.org/news/2013/07/22/world-bank-ducking-human-rights-issues
+Human Rights Watch can use this analysis to support their campaigns and causes. They can write articles and organize people and discussions based on the findings.
+Amnesty International may also use this analysis to start or support campaigns and to persuade donors to help support their organization or specific causes. 
+International Women’s Rights Action Watch can use the analysis to look out for concerning trends or problem areas they may have previously neglected or been unaware of.
+FIDH- The Worldwide Human Rights Movement - “FIDH is an international human rights NGO federating 184 organizations from 112countries. Since 1922, FIDH has been defending all civil, political, economic, social and cultural rights as set out in the Universal Declaration of Human Rights.”
+
+      3. What data are you going to use for this? How will you acquire this data?:  
+The World Bank’s Gender Statistics Data- Downloaded from Kaggle: https://www.kaggle.com/theworldbank/world-gender-statistics
+I have already downloaded the CSV document and have begun grouping the various indicators by topic.
+
+      4. In brief, outline your approach to solving this problem (knowing that this might change later):
+First, I will group the indicators into topics that relate to each other, possibly to be analyzed together or as a group. Then, I will begin manipulating the data with pandas to see if there are any obvious correlations. Once I’ve done some initial exploration, then I’ll write a hypothesis to help focus my analysis. I will use pandas and matplotlib to start breaking down data by region etc and making comparison graphics and other visualizations of the data.
+
+      5. What are your deliverables? Typically, this would include code, along with a paper and/or a slide deck.:
+At the end, I will deliver code with my analyses and visualizations. I will also make this information and visualizations into a more accessible form as a pdf report and/or as a powerpoint/slide deck.
