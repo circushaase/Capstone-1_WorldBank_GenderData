@@ -1,0 +1,12 @@
+Create a short document (1-2 pages) in your github describing the data wrangling steps that you undertook to clean your capstone project data set. What kind of cleaning steps did you perform? How did you deal with missing values, if any? Were there outliers, and how did you decide to handle them? This document will eventually become part of your milestone report.
+
+
+The World Bank Gender Statistics data set was first imported it into a Pandas dataframe. Columns in the raw data set are years the datapoints were recorded,  so the dataframe was melted in order to stack the years into rows. Then NA values were dropped from the data frame, to eliminate unnecessary rows created for years where no data is listed.
+ 
+The rows of the raw data contain not only which country the data point is from, but also which indicator variable the point represents. Since the goal is to analyze the variables by how they correlate with country and year, the variables need to be listed as columns. So the indicator variables were unstacked to list each measured indicator as its own column, with the rows representing the country and year the value was collected or measured. 
+
+Initially any missing values were left as NaN because listing them as 0 would significantly affect the analysis. Once I have a more clear direction of my analysis, I may have to deal with NaN values in a different way. The same goes for outliers. I used Seaborn to make a boxplot of the entire data frame, but there is just too much data for the boxplot to really be useful.
+
+There are nearly 700 different indicator variables contained in the dataset. This is an overwhelming amount of information to try to tease out something interesting. Once I figure out what my research questions are, it will making filtering out unnecessary data easy. But I also do not want to look over potentially interesting insights. To look at variables that are similar or have similar implications, I may attempt to do some factor analysis to examine correlating variables in order to group them together into a composite score of some kind, which I can then use to run t-tests between the different countries or even the different years. 
+
+For now, just to look at something and make sure I know how to run simple correlations, I plotted Contraceptive Prevalence against life expectancy as a scatter plot. 
